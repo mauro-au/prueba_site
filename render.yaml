@@ -2,6 +2,7 @@ databases:
   - name: prueba_site_development
     databaseName: prueba_site_development
     user: mauro
+    password: Kandor
     plan: free
 
 services:
