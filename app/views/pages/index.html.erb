@@ -1,2 +1,23 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<h1 class="text-center mt-5">Harry Potter</h1>
+<h4 class="text-center mb-5">Howarts Rails</h4>
+
+<table class="table table-striped table-bordered p-4 border-2">
+  <thead class="table-primary">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Locacion</th>
+      <th scope="col">Casa</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider p-4 border-2">
+    <% @characters.each do |a| %>
+      <tr>
+        <th scope="row"><%= a.id %></th>
+        <td><%= a.name %></td>
+        <td><%= a.location %></td>
+        <td><%= a.house %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
